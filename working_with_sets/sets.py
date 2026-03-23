@@ -1,5 +1,5 @@
 
-# path where files are stored (you'll need to change this)
+
 file_path = r"C:\WiseOwl\working_with_sets\\"
 
 # read first file into a list
