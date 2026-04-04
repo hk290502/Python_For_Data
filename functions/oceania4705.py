@@ -40,16 +40,15 @@ def print_results(continent_name, countries):
     else:
         print(f"No data found for {continent_name}.")
 
-# choose continent to show data for
+
 continent_name = "Africa"
 
-# get text from file for given continent name
 
 
 country_list = get_contents_of_file(continent_name)
 print(f"country_list is: {country_list}")  # add this
 
-# from this extract a list of countries and cities
+
 countries = get_country_dict(country_list)
 
 
