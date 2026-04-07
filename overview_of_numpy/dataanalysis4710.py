@@ -24,3 +24,6 @@ print(medal_table)
 
 for x in medal_table:
     print(x[1:])
+
+for y in medal_table:
+    print
