@@ -1,10 +1,14 @@
-import math 
-import matplotlib.pyplot as plt
+class TooYoungError(Exception):
+    pass
 
-def message(x, y):
-    print("This is my very own function!")
-    return x, y
+def check_entry(age):
+    if age < 18:
+        raise TooYoungError("Must be 18+")
+    else:
+        print("Welcome")
+        return age
 
-result = message(2, 4)
-
-print(result)
+try:
+    check_entry(17)
+except TooYoungError as t:
+    print(t)
